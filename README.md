@@ -113,3 +113,4 @@ The application uses a file-based storage system with JSON files:
 ## License
 
 This project is licensed under the MIT License. 
+# E-Commerce-Product-Scraper-and-Manager
