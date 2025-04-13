@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+		"name": "Ecommerce Scraper API",
+		"description": "API collection for the Ecommerce Scraper application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"description": "Product management endpoints",
+			"item": [
+				{
+					"name": "Get All Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/products?page=1&limit=10&sort=-createdAt&minPrice=0&maxPrice=1000&category=electronics&rating=4",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3001",
+							"path": ["api", "v1", "products"],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "sort",
+									"value": "-createdAt"
+								},
+								{
+									"key": "minPrice",
+									"value": "0"
+								},
+								{
+									"key": "maxPrice",
+									"value": "1000"
+								},
+								{
+									"key": "category",
+									"value": "electronics"
+								},
+								{
+									"key": "rating",
+									"value": "4"
+								}
+							]
+						},
+						"description": "Get all products with pagination and filtering"
+					}
+				},
+				{
+					"name": "Get Product by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/products/:id",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3001",
+							"path": ["api", "v1", "products", ":id"],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "Product ID"
+								}
+							]
+						},
+						"description": "Get a single product by ID"
+					}
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Sample Product\",\n    \"price\": 99.99,\n    \"description\": \"Product description\",\n    \"category\": \"electronics\",\n    \"rating\": 4.5,\n    \"imageUrl\": \"https://example.com/image.jpg\",\n    \"productUrl\": \"https://example.com/product\",\n    \"source\": \"example-store\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/v1/products",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3001",
+							"path": ["api", "v1", "products"]
+						},
+						"description": "Create a new product"
+					}
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"price\": 89.99,\n    \"description\": \"Updated description\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/v1/products/:id",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3001",
+							"path": ["api", "v1", "products", ":id"],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "Product ID"
+								}
+							]
+						},
+						"description": "Update a product"
+					}
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/products/:id",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3001",
+							"path": ["api", "v1", "products", ":id"],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "Product ID"
+								}
+							]
+						},
+						"description": "Delete a product"
+					}
+				},
+				{
+					"name": "Get Products by Website",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/products/website/:website",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3001",
+							"path": ["api", "v1", "products", "website", ":website"],
+							"variable": [
+								{
+									"key": "website",
+									"value": "",
+									"description": "Website name"
+								}
+							]
+						},
+						"description": "Get products by website"
+					}
+				},
+				{
+					"name": "Get Products by Price Range",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/products/price-range/:min/:max",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3001",
+							"path": ["api", "v1", "products", "price-range", ":min", ":max"],
+							"variable": [
+								{
+									"key": "min",
+									"value": "",
+									"description": "Minimum price"
+								},
+								{
+									"key": "max",
+									"value": "",
+									"description": "Maximum price"
+								}
+							]
+						},
+						"description": "Get products by price range"
+					}
+				}
+			]
+		},
+		{
+			"name": "Scraping",
+			"description": "Scraping control endpoints",
+			"item": [
+				{
+					"name": "Start Scraping",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/scrape/start",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3001",
+							"path": ["api", "v1", "scrape", "start"]
+						},
+						"description": "Trigger scraping for all configured websites"
+					}
+				},
+				{
+					"name": "Get Scraping Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/scrape/status",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3001",
+							"path": ["api", "v1", "scrape", "status"]
+						},
+						"description": "Get current scraping status"
+					}
+				},
+				{
+					"name": "Scrape Specific Website",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/scrape/website/:website",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3001",
+							"path": ["api", "v1", "scrape", "website", ":website"],
+							"variable": [
+								{
+									"key": "website",
+									"value": "",
+									"description": "Website name"
+								}
+							]
+						},
+						"description": "Trigger scraping for a specific website"
+					}
+				},
+				{
+					"name": "Get Scraping Configuration",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/scrape/config",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "3001",
+							"path": ["api", "v1", "scrape", "config"]
+						},
+						"description": "Get scraping configuration"
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:3001/api/v1",
+			"type": "string"
+		}
+	]
+} 

@@ -1,0 +1,275 @@
+[
+  {
+    "website": "amazon",
+    "category": "electronics",
+    "productsCount": 0,
+    "status": "success",
+    "timestamp": "2025-04-11T16:08:43.147Z"
+  },
+  {
+    "website": "amazon",
+    "category": "electronics",
+    "productsCount": 0,
+    "status": "success",
+    "timestamp": "2025-04-11T16:09:12.536Z"
+  },
+  {
+    "website": "amazon",
+    "category": "electronics",
+    "productsCount": 0,
+    "status": "success",
+    "timestamp": "2025-04-11T16:13:37.438Z"
+  },
+  {
+    "website": "amazon",
+    "category": null,
+    "status": "error",
+    "error": "Waiting for selector `.s-main-slot.s-result-list` failed: Waiting failed: 5000ms exceeded",
+    "timestamp": "2025-04-11T16:14:18.349Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "status": "error",
+    "error": "Waiting for selector `.s-search-results` failed: Waiting failed: 5000ms exceeded",
+    "timestamp": "2025-04-12T17:07:24.676Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptops&ref=cs_503_search",
+    "productsCount": 0,
+    "status": "success",
+    "timestamp": "2025-04-12T17:13:33.170Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "status": "error",
+    "error": "Navigation timeout of 30000 ms exceeded",
+    "timestamp": "2025-04-12T17:22:23.015Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "status": "error",
+    "error": "Navigation timeout of 30000 ms exceeded",
+    "timestamp": "2025-04-12T17:24:56.224Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "status": "error",
+    "error": "net::ERR_TIMED_OUT at https://www.amazon.com/s?k=laptop",
+    "timestamp": "2025-04-12T17:26:50.677Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "status": "error",
+    "error": "net::ERR_TIMED_OUT at https://www.amazon.com/s?k=laptop",
+    "timestamp": "2025-04-12T17:29:05.002Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "productsCount": 1,
+    "status": "success",
+    "timestamp": "2025-04-12T18:19:56.241Z"
+  },
+  {
+    "website": "amazon",
+    "category": "smartphone",
+    "status": "error",
+    "error": "Waiting for selector `.s-search-results` failed: Waiting failed: 30000ms exceeded",
+    "timestamp": "2025-04-12T18:21:49.972Z"
+  },
+  {
+    "website": "amazon",
+    "category": "headphones",
+    "productsCount": 8,
+    "status": "success",
+    "timestamp": "2025-04-12T18:23:09.545Z"
+  },
+  {
+    "website": "amazon",
+    "category": "tablet",
+    "productsCount": 3,
+    "status": "success",
+    "timestamp": "2025-04-12T18:24:08.470Z"
+  },
+  {
+    "website": "amazon",
+    "category": "smartwatch",
+    "productsCount": 3,
+    "status": "success",
+    "timestamp": "2025-04-12T18:25:12.685Z"
+  },
+  {
+    "website": "bestbuy",
+    "category": "laptop",
+    "status": "error",
+    "error": "Waiting for selector `.sku-item-list` failed: Waiting failed: 30000ms exceeded",
+    "timestamp": "2025-04-12T18:27:53.346Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "productsCount": 1,
+    "status": "success",
+    "timestamp": "2025-04-12T18:32:38.374Z"
+  },
+  {
+    "website": "amazon",
+    "category": "smartphone",
+    "productsCount": 9,
+    "status": "success",
+    "timestamp": "2025-04-12T18:34:49.747Z"
+  },
+  {
+    "website": "amazon",
+    "category": "headphones",
+    "productsCount": 9,
+    "status": "success",
+    "timestamp": "2025-04-12T18:36:23.663Z"
+  },
+  {
+    "website": "amazon",
+    "category": "tablet",
+    "productsCount": 3,
+    "status": "success",
+    "timestamp": "2025-04-12T18:37:10.704Z"
+  },
+  {
+    "website": "amazon",
+    "category": "smartwatch",
+    "productsCount": 3,
+    "status": "success",
+    "timestamp": "2025-04-12T18:38:07.712Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "productsCount": 1,
+    "status": "success",
+    "timestamp": "2025-04-12T18:41:40.662Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "productsCount": 1,
+    "status": "success",
+    "timestamp": "2025-04-12T18:43:20.416Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "productsCount": 2,
+    "status": "success",
+    "timestamp": "2025-04-12T18:45:26.042Z"
+  },
+  {
+    "website": "amazon",
+    "category": "smartphone",
+    "productsCount": 10,
+    "status": "success",
+    "timestamp": "2025-04-12T18:47:20.331Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "productsCount": 1,
+    "status": "success",
+    "timestamp": "2025-04-12T19:11:00.015Z"
+  },
+  {
+    "website": "amazon",
+    "category": "smartphone",
+    "productsCount": 11,
+    "status": "success",
+    "timestamp": "2025-04-12T19:26:58.337Z"
+  },
+  {
+    "website": "amazon",
+    "category": "headphones",
+    "productsCount": 7,
+    "status": "success",
+    "timestamp": "2025-04-12T19:35:02.090Z"
+  },
+  {
+    "website": "amazon",
+    "category": "tablet",
+    "productsCount": 3,
+    "status": "success",
+    "timestamp": "2025-04-12T19:41:24.812Z"
+  },
+  {
+    "website": "amazon",
+    "category": "smartwatch",
+    "productsCount": 2,
+    "status": "success",
+    "timestamp": "2025-04-12T19:47:56.468Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "productsCount": 1,
+    "status": "success",
+    "timestamp": "2025-04-13T05:30:09.061Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "productsCount": 3,
+    "status": "success",
+    "timestamp": "2025-04-13T06:30:16.725Z"
+  },
+  {
+    "website": "amazon",
+    "category": "smartphone",
+    "status": "error",
+    "error": "Waiting for selector `.s-search-results` failed: Waiting failed: 30000ms exceeded",
+    "timestamp": "2025-04-13T06:31:50.277Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "productsCount": 6,
+    "status": "success",
+    "timestamp": "2025-04-13T07:30:25.177Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "productsCount": 2,
+    "status": "success",
+    "timestamp": "2025-04-13T08:30:12.581Z"
+  },
+  {
+    "website": "amazon",
+    "category": "smartphone",
+    "status": "error",
+    "error": "Waiting for selector `.s-search-results` failed: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.",
+    "timestamp": "2025-04-13T08:30:37.620Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "productsCount": 1,
+    "status": "success",
+    "timestamp": "2025-04-13T09:30:10.183Z"
+  },
+  {
+    "website": "amazon",
+    "category": "smartphone",
+    "productsCount": 11,
+    "status": "success",
+    "timestamp": "2025-04-13T09:30:53.287Z"
+  },
+  {
+    "website": "amazon",
+    "category": "laptop",
+    "productsCount": 3,
+    "status": "success",
+    "timestamp": "2025-04-13T10:30:18.733Z"
+  }
+]
